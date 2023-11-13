@@ -7,25 +7,46 @@ class ListaTareasPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Tareas'),
+        title: const Text('Lista de Tareas'),
       ),
       body: ListView(
-        padding: EdgeInsets.all(16.0),
-        children: [
+        padding: const EdgeInsets.all(16.0),
+        children: const [
           ListTareas(
-            nombre: '',
-            descripcion: '',
-            fecha: '',
-            url: '',
+            nombre: 'Matemáticas',
+            descripcion: 'Repasar los temas de cálculo y álgebra',
+            fecha: '2023-11-15',
+            url: 'https://portal.unitec.edu/',
           ),
           SizedBox(height: 16.0),
           ListTareas(
-            nombre: '',
-            descripcion: '',
-            fecha: '',
-            url: '',
+            nombre: 'Logica',
+            descripcion: 'Leer los capítulos 5 y 6',
+            fecha: '2023-11-20',
+            url: 'https://portal.unitec.edu/',
           ),
-          // Agrega m s ejemplos seg n sea necesario
+          SizedBox(height: 16.0),
+          ListTareas(
+            nombre: 'Proyecto de ciencias',
+            descripcion: 'Completar el informe del proyecto de Programacion',
+            fecha: '2023-11-30',
+            url: 'https://portal.unitec.edu/',
+          ),
+          SizedBox(height: 16.0),
+          ListTareas(
+            nombre: 'Presentación',
+            descripcion: 'Crear diapositivas sobre la etica Informatica',
+            fecha: '2023-12-01',
+            url: 'https://portal.unitec.edu/',
+          ),
+          SizedBox(height: 16.0),
+          ListTareas(
+            nombre: 'Práctica',
+            descripcion:
+                'Resolver los ejercicios de la plataforma de programación',
+            fecha: '2023-12-05',
+            url: 'https://portal.unitec.edu/',
+          ),
         ],
       ),
     );
@@ -59,23 +80,23 @@ class ListTareas extends StatelessWidget {
               children: [
                 Text(
                   nombre,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20.0,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
                 Row(
                   children: [
-                    Icon(Icons.date_range, color: Colors.grey),
+                    const Icon(Icons.date_range, color: Colors.grey),
                     SizedBox(width: 4.0),
                     Text(
                       fecha,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 14.0,
                         color: Colors.grey,
                       ),
                     ),
-                    SizedBox(width: 4.0),
+                    const SizedBox(width: 4.0),
                     Icon(Icons.link, color: Colors.blue),
                   ],
                 ),

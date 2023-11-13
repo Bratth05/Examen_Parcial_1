@@ -8,10 +8,12 @@ import 'package:flutter_examen_1/podcast.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'App CEUTEC',
+      title: 'CEUTEC',
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePages(),

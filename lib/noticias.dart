@@ -7,36 +7,36 @@ class NoticiasPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Noticias Académicas'),
+        title: const Text('Noticias de Programación'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16.0),
         children: const [
           Notificaciones(
-            titulo: 'Evento de graduacion',
-            fecha: '31 de noviembre, 2023',
+            titulo: 'Nueva versión de Python',
+            fecha: '01 - Diciembre - 2023',
             contenido:
-                ' Te invitamos a nuestros proximos actos de graduacion este 2023!',
+                'Python 4.0 ha sido lanzado con nuevas y emocionantes características.',
           ),
           SizedBox(height: 16.0),
           Notificaciones(
-            titulo: 'Conferencia sobre emprendimiento',
+            titulo: 'Conferencia de Flutter',
             fecha: '12 de noviembre, 2023',
             contenido:
-                'No te pierdas la conferencia sobre la importancia del emprendimiento en nuestro pais.',
+                'No te pierdas la conferencia anual de Flutter donde se presentarán las últimas actualizaciones y características.',
           ),
           Notificaciones(
-            titulo: 'Matriculo abierta',
+            titulo: 'Hackathon de programación',
             fecha: '30 de noviembre, 2023',
             contenido:
-                'Se le informa a toda la comunidad CEUTEC y demas que la matricula para el proximo periodo academico se encuentra disponible.',
+                'Participa en nuestro hackathon de programación y demuestra tus habilidades de codificación.',
           ),
           SizedBox(height: 16.0),
           Notificaciones(
-            titulo: 'Feria de Tecnologia',
+            titulo: 'Curso de Inteligencia Artificial',
             fecha: '22 de noviembre, 2023',
             contenido:
-                'Muestra tus habilidades y conocimientos sobre el maravilloso mundo de la tecnologia, esta es tu oportunidad.',
+                'Inscríbete en nuestro curso de Inteligencia Artificial y aprende sobre las últimas tendencias en IA.',
           ),
         ],
       ),
