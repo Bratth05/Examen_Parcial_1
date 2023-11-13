@@ -7,7 +7,7 @@ class HomePages extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('CEUTEC'),
+        title: const Text('CEUTEC'),
       ),
       drawer: Drawer(
         child: ListView(

@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePages(),
-        '/noticias': (context) => NoticiasPage(),
-        '/cambioMoneda': (context) => const CambioMonedaPage(),
+        '/noticias': (context) => const NoticiasPage(),
+        '/cambioMoneda': (context) => CambioMonedaPage(),
         '/listaTareas': (context) => const ListaTareasPage(),
         '/podcast': (context) => const PodcastPage(),
       },

@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
 class CambioMonedaPage extends StatelessWidget {
-  const CambioMonedaPage({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cambio de monedas'),
+      ),
+      body: const Center(
+        child: Text('Esta es la p gina de cambio de monedas'),
+      ),
+    );
   }
 }
